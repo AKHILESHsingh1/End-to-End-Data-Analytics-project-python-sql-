@@ -1,40 +1,38 @@
 # 📊 Orders Data Analysis Project
 
-This repository showcases an end-to-end data analysis project using an e-commerce order dataset. It includes:
-
-- ETL process using Python and Pandas
-- Data upload to MySQL
-- Exploratory data analysis and business insights using SQL
+This repository demonstrates a complete data analysis workflow using an e-commerce order dataset. It includes an ETL pipeline, data upload to a MySQL database, and SQL-based analytical queries to extract business insights.
 
 ---
 
-## 📁 Project Structure
-├── orders.csv # Raw dataset
-├── ETL process.ipynb # Python notebook for preprocessing & loading data
-├── df_orders_analysis.sql # SQL queries for analysis
-└── README.md # Project documentation
+## 🗂️ Project Structure
+
+- `orders.csv` – Raw dataset
+- `ETL process.ipynb` – Jupyter Notebook for data cleaning and loading into MySQL
+- `df_orders_analysis.sql` – SQL file containing various analysis queries
+- `README.md` – Project documentation
 
 ---
 
-## 🔧 Tools Used
+## 🛠️ Tools & Technologies
 
-- 🐍 Python (Pandas, SQLAlchemy)
-- 🐬 MySQL
-- 📓 Jupyter Notebook
-
----
-
-## 🧪 ETL Process
-
-1. **Load** the raw CSV file (`orders.csv`) using Pandas
-2. **Clean and format** data (e.g. dates, nulls)
-3. **Upload** the cleaned DataFrame to MySQL using SQLAlchemy
-
-> Check the notebook: `ETL process.ipynb`
+- **Python** (Pandas, SQLAlchemy)
+- **MySQL**
+- **Jupyter Notebook**
+- **SQL** (CTEs, Aggregations, Window Functions)
 
 ---
 
-## 🗃️ SQL Table Schema
+## 🔁 ETL Process
+
+The ETL (Extract, Transform, Load) process is implemented in the `ETL process.ipynb` notebook.
+
+- **Extract:** Load `orders.csv` using Pandas
+- **Transform:** Clean and format data (handle dates, nulls, etc.)
+- **Load:** Upload the processed DataFrame to MySQL using SQLAlchemy
+
+---
+
+## 🧱 SQL Table Schema
 
 ```sql
 CREATE TABLE df_orders (
